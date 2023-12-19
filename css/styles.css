@@ -1,0 +1,98 @@
+:root {
+  --digit-color: #2d302f;
+  --light-grey-color: rgb(168, 166, 166);
+  --operand-color: rgb(255, 196, 0);
+}
+
+body {
+  background-color: tan;
+  margin: 0;
+}
+
+.box {
+  width: 430px;
+  height: 932px;
+  background-color: black;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+
+.display {
+  width: 100%;
+  height: 30%;
+  padding-top: 30px;
+}
+
+.display input {
+  width: 90%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  border-color: black;
+  border-style: none;
+  font-size: 36px;
+  text-align: right;
+  display: block;
+  margin: 0 auto;
+}
+
+.keys {
+  width: 90%;
+  height: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  border: black 2px solid;
+  border-radius: 50%;
+  font-size: 44px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.button.gray {
+  color: black;
+  background-color: var(--light-grey-color);
+  margin-right: 22px;
+}
+
+.button.yellow {
+  color: white;
+  background-color: var(--operand-color);
+  margin-right: 0;
+}
+
+.button.black {
+  color: white;
+  background-color: var(--digit-color);
+  margin-right: 22px;
+}
+
+.button.black.wide {
+  width: calc(160px + 22px);
+  border-radius: 100px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.gray:active {
+  border: var(--digit-color) 2px solid;
+}
+
+.black:active {
+  border: var(--light-grey-color) 2px solid;
+}
+
+.yellow:active {
+  border: var(--light-grey-color) 2px solid;
+}
