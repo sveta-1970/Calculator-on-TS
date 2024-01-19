@@ -7,19 +7,39 @@
   <body>
     <div class="box">
       <div class="display">
-        <input type="text" id="input" readonly size="7" />
+        <span id="memoryFlag"></span>
+        <input type="text" id="inputValue" readonly size="7" />
       </div>
       <div class="keys">
+        <input
+          type="button"
+          class="button gray wide"
+          id="clear-memory"
+          value="MRC"
+        />
+        <input
+          type="button"
+          class="button gray"
+          id="memoryIn"
+          value="M+"
+        />
+        <input
+          type="button"
+          class="button gray"
+          id="memoryOut"
+          value="M-"
+        />
+
         <input type="button" class="button gray" id="clear-button" value="AC" />
         <input
           type="button"
-          class="button gray memory"
+          class="button gray"
           id="negate-button"
           value="+/-"
         />
         <input
           type="button"
-          class="button gray percent"
+          class="button gray"
           id="percent"
           value="%"
         />
